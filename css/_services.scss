@@ -1,0 +1,28 @@
+.services{
+    display:flex;
+    justify-content:space-between;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background: white;
+    margin-right: 3rem;
+    padding:5rem;
+    width:100%;
+    transform:translate(0,-20rem);
+    box-shadow: 0 12px 12px 0 $third;
+       
+       .card-icon{
+           margin-top: 1rem;
+           max-height:10rem;
+       }
+       .card-title{
+        text-align:center;
+        padding-top: 3rem;    
+       }
+       .card-text{
+         padding: 4rem 0 5rem 0;
+         text-align:center;
+       }
+}

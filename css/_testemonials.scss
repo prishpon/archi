@@ -1,0 +1,21 @@
+.testemonials{
+    background-color: white;
+}
+.test-wrapper{
+    display:flex;
+    flex-direction: row;
+    margin-top:11rem;
+      
+}
+.testemonial-author{
+    margin-bottom:7rem;
+    color:rgb(12, 12, 12);
+    font-size:1.8rem;
+}
+.testemonial-text{
+    transform:translateX(2rem);
+}
+.button-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
