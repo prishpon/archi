@@ -1,6 +1,7 @@
 .portfolio{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .plain{
     padding:16rem 0;

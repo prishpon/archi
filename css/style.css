@@ -5,6 +5,7 @@
   background-image: linear-gradient(45deg, #0169b4 0%, #a72b8f 100%);
   background-image: -ms-linear-gradient(45deg, #0169b4 0%, #a72b8f 100%);
   opacity: 0.902;
+  z-index: 100;
 }
 
 .topheader {
@@ -19,7 +20,8 @@
 }
 
 .main_logo {
-  height: 45px;
+  height: 40px;
+  width: 100%;
 }
 
 nav {
@@ -66,7 +68,7 @@ ul.menu li.menu_item {
 }
 
 .logo_container {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +80,7 @@ ul.menu li.menu_item {
 }
 
 .logo_text {
-  padding-left: 3rem;
+  padding-left: 1rem;
 }
 
 .banner {
@@ -141,15 +143,6 @@ p {
   color: #878787;
 }
 
-.right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: align-self;
-      -ms-flex-align: align-self;
-          align-items: align-self;
-}
-
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +171,11 @@ p {
           transform: translate(0, -20rem);
   -webkit-box-shadow: 0 12px 12px 0 #999999;
           box-shadow: 0 12px 12px 0 #999999;
+  z-index: 1000;
+}
+
+.card:first-child {
+  margin-left: 3rem;
 }
 
 .card .card-icon {
@@ -203,13 +201,15 @@ button.primary {
   padding: 1.7rem 3.8rem;
   border-radius: 3rem;
   background: transparent;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
 }
 
 button.primary:hover {
   background-color: #0169b4;
   color: white;
-  -webkit-box-shadow: 4px 4px 8px 4px #0169b4, 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 4px 8px 4px #0169b4, 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 0.2rem 0.2rem rgba(153, 153, 153, 0.1);
+          box-shadow: inset 0 0 0.2rem 0.2rem rgba(153, 153, 153, 0.1);
   border: none;
 }
 
@@ -239,6 +239,8 @@ button.primary:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .plain {
@@ -262,6 +264,10 @@ button.primary:hover {
   padding: 0 13rem 7rem 0;
 }
 
+.testemonials {
+  background-color: white;
+}
+
 .test-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,23 +279,21 @@ button.primary:hover {
   margin-top: 11rem;
 }
 
-.test-wrapper button {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.test-image {
-  padding-right: 1.2rem;
-  -webkit-transform: translateY(-2rem);
-          transform: translateY(-2rem);
-}
-
 .testemonial-author {
   margin-bottom: 7rem;
+  color: #0c0c0c;
+  font-size: 1.8rem;
 }
 
-.testemonials {
+.testemonial-text {
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -434,10 +438,11 @@ i.foooter-widget-icon {
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
-  background: rgba(204, 204, 204, 0.2);
+  background: #cccccc;
 }
 
 * {
@@ -446,6 +451,7 @@ body {
   margin: 0;
   padding: 0;
   outline: none;
+  overflow-x: hidden;
 }
 
 .container {
@@ -496,5 +502,14 @@ a:active {
 
 .mb-70 {
   margin-bottom: 7rem;
+}
+
+@media (max-width: 1024px) {
+  .logo_container {
+    padding-left: 2rem;
+  }
+  .main_heading {
+    padding-left: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

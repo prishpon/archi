@@ -7,16 +7,17 @@
     background-image: -webkit-linear-gradient( 45deg, rgb(1,105,180) 0%, rgb(167,43,143) 100%);
     background-image: -ms-linear-gradient( 45deg, rgb(1,105,180) 0%, rgb(167,43,143) 100%);
     opacity: 0.902;
-  
+    z-index:100;
 }
 .topheader{
     padding: 11rem 0 0 0;
     display:flex;
     justify-content:space-between;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 .main_logo{
-    height:45px;
+    height:40px;
+    width:100%;
 }
 
 nav{
@@ -49,14 +50,14 @@ nav{
                  }  
           }
           .logo_container{
-              font-size:3.4rem;
+              font-size:3.2rem;
               display:flex;
               align-items:center;
               text-transform:uppercase;
               font-family: "Montserrat";
           }
           .logo_text{
-              padding-left:3rem;
+              padding-left:1rem;
           }
           .banner{
               padding:14rem 0 34rem 0;
